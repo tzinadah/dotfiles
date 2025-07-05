@@ -21,6 +21,11 @@ PS1='\[\e[38;2;180;160;255m\]\w\[\e[0m\]\[\e[38;2;80;60;200m\] $(parse_git_branc
 alias performance='asusctl profile -P Performance'
 alias quiet='asusctl profile -P Quiet'
 
+# Git Credentials
+eval "$(ssh-agent -s)" >/dev/null 2>&1
+ssh-add -l 2>/dev/null | grep -q "id_uni" || ssh-add ~/.ssh/id_uni >/dev/null 2>&1
+ssh-add -l 2>/dev/null | grep -q "id_personal" || ssh-add ~/.ssh/id_personal >/dev/null 2>&1
+
 # Git staging and commiting
 commit() {
     git add -A
