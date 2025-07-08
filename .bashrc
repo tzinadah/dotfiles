@@ -108,4 +108,4 @@ alias vi="nvim"
 export CRYPTOGRAPHY_OPENSSL_NO_LEGACY=1
 
 # Tmux
-alias tmux="tmux -f ~/.config/tmux/tmux.conf"
+alias tm="tmux -f ~/.config/tmux/tmux.conf"

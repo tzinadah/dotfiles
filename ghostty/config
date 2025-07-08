@@ -4,3 +4,5 @@ maximize = true
 font-size = 18
 theme = tokyonight
 window-padding-balance = true
+cursor-style = bar
+font-feature = -calt, -liga, -dlig

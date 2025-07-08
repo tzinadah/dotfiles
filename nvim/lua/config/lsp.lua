@@ -179,8 +179,6 @@ vim.lsp.config.tailwindcss = {
 	end,
 }
 -- Python
-local conda_prefix = os.getenv("CONDA_PREFIX")
-local python_path = conda_prefix and (conda_prefix .. "/bin/python") or "/usr/bin/python"
 
 vim.lsp.config.pyright = {
 	cmd = { "pyright-langserver", "--stdio" },
@@ -192,14 +190,9 @@ vim.lsp.config.pyright = {
 		"requirements.txt",
 		"Pipfile",
 		"pyrightconfig.json",
+		"requirement.txt",
 		".git",
 	},
-	before_init = function(_, config)
-		config.settings = config.settings or {}
-		config.settings.python = vim.tbl_deep_extend("force", {
-			pythonPath = python_path,
-		}, config.settings.python or {})
-	end,
 	settings = {
 		python = {
 			analysis = {
