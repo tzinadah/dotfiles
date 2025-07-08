@@ -199,6 +199,7 @@ vim.lsp.config.pyright = {
 				autoSearchPaths = true,
 				useLibraryCodeForTypes = true,
 				diagnosticMode = "openFilesOnly",
+				extraPaths = { "." },
 			},
 		},
 	},
