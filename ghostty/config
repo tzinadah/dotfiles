@@ -1,8 +1,11 @@
 font-family = JetBrains Mono ExtraBold
 font-style-italic = false
-maximize = true
+fullscreen = true
 font-size = 18
 theme = tokyonight
 window-padding-balance = true
+window-padding-x = 0
+window-padding-y = 0
+window-padding-color = "extend"
 cursor-style = bar
 font-feature = -calt, -liga, -dlig

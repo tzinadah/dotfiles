@@ -1,4 +1,4 @@
--- Neovim Config
+-- Config entry point
 
 -- Lazy Neovim
 require("config.lazy")

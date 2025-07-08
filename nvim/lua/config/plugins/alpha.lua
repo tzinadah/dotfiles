@@ -30,7 +30,7 @@ return {
 			dashboard.button("e", "   New file", ":ene <BAR> startinsert <CR>"),
 			dashboard.button("f", "󰈞   Find file", ":Telescope find_files <CR>"),
 			dashboard.button("x", "   Explore", ":Oil <CR>"),
-			dashboard.button("s", "   Settings", ":edit ~/.config/nvim<CR>"),
+			dashboard.button("s", "   Settings", ":edit ~/dotfiles/<CR>"),
 			dashboard.button("q", "󰩈   Quit Neovim", ":qa<CR>"),
 		}
 
