@@ -13,4 +13,5 @@ return {
 	require("config.plugins.autopairs"),
 	require("config.plugins.tabout"),
 	require("config.plugins.alpha"),
+	require("config.plugins.markdown"),
 }

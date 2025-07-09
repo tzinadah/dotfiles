@@ -8,3 +8,6 @@ window-padding-x = 0
 window-padding-y = 0
 window-padding-color = "extend"
 font-feature = -calt, -liga, -dlig
+cursor-style = block
+cursor-style-blink = false
+shell-integration-features = "no-cursor"
