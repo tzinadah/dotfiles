@@ -8,7 +8,7 @@ return {
 				lua = { "stylua" },
 				-- Go
 				go = { "goimports", "gofmt" },
-				-- HTML / CSS / Tailwind / JSX / TSX / JS / JSON
+				-- HTML / CSS / Tailwind / JSX / TSX / JS / JSON / MD
 				html = { "prettier" },
 				css = { "prettier" },
 				scss = { "prettier" },
@@ -20,6 +20,7 @@ return {
 				json = { "prettier" },
 				jsonc = { "prettier" },
 				yaml = { "prettier" },
+				markdown = { "prettier" },
 				-- Python
 				python = { "black" },
 				-- Shell
