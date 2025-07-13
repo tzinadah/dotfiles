@@ -10,6 +10,6 @@ return {
 	lazy = false,
 	config = function()
 		vim.keymap.set("n", "<leader>ex", ":edit .<CR>")
-		require("oil").setup({ default_file_explorer = true })
+		require("oil").setup({ default_file_explorer = true, view_options = { view_hidden = false } })
 	end,
 }
