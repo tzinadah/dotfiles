@@ -9,9 +9,9 @@ return {
 	config = function()
 		require("telescope").setup({
 			pickers = {
-				find_files = { theme = "dropdown", hidden = true },
-				live_grep = { theme = "dropdown", hidden = true },
-				help_tags = { theme = "ivy", hidden = true },
+				find_files = { theme = "dropdown", hidden = true, file_ignore_patterns = { "node_modules/", ".git/" } },
+				live_grep = { theme = "dropdown", hidden = true, file_ignore_patterns = { "node_modules/", ".git/" } },
+				help_tags = { theme = "ivy", hidden = true, file_ignore_patterns = { "node_modules/", ".git/" } },
 			},
 			extensions = {
 				fzf = {},
