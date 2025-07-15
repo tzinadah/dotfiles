@@ -16,4 +16,5 @@ return {
 	require("config.plugins.markdown"),
 	require("config.plugins.blankline"),
 	require("config.plugins.comment"),
+	require("config.plugins.surround"),
 }
