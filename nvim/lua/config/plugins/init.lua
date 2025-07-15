@@ -14,4 +14,6 @@ return {
 	require("config.plugins.tabout"),
 	require("config.plugins.alpha"),
 	require("config.plugins.markdown"),
+	require("config.plugins.blankline"),
+	require("config.plugins.comment"),
 }

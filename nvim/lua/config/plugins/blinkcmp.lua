@@ -46,6 +46,7 @@ return {
 		--
 		-- See the fuzzy documentation for more information
 		fuzzy = { implementation = "prefer_rust_with_warning" },
+		signature = { enabled = true, window = { show_documentation = true } },
 	},
 	opts_extend = { "sources.default" },
 }
