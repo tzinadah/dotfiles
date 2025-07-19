@@ -42,3 +42,6 @@ vim.cmd("autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatopt
 
 -- Colorscheme
 vim.cmd.colorscheme("nordfox")
+
+-- Cursor
+vim.api.nvim_set_hl(0, "Visual", { bg = "#404E5C", fg = "#B7C3F3", blend = 30 })

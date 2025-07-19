@@ -17,19 +17,5 @@ vim.keymap.set("v", "<A-j>", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv")
 vim.keymap.set("n", "<leader>d", "<C-d>zz")
 vim.keymap.set("n", "<leader>u", "<C-u>zz")
-vim.keymap.set("n", "<leader>err", function()
-	vim.api.nvim_put({
-		"if err != nil {",
-		'    log.Printf("\\nError: %s", err)',
-		"}",
-	}, "l", true, true)
-	vim.cmd('normal! k0f"')
-end)
-vim.keymap.set("n", "<leader>erf", function()
-	vim.api.nvim_put({
-		"if err != nil {",
-		'    log.Fatalf("\\nError: %s", err)',
-		"}",
-	}, "l", true, true)
-	vim.cmd('normal! k0f"')
-end)
+vim.keymap.set("n", "<leader>err", 'oif err != nil{<CR>}<Esc>Olog.Printf("\\nError: %s", err)<Esc>F\\i')
+vim.keymap.set("n", "<leader>erf", 'oif err != nil{<CR>}<Esc>Olog.Fatalf("\\nError: %s", err)<Esc>F\\i')

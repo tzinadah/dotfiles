@@ -109,3 +109,7 @@ export CRYPTOGRAPHY_OPENSSL_NO_LEGACY=1
 
 # Tmux
 alias tm="tmux -f ~/.config/tmux/tmux.conf"
+
+# Tailwind Formatter and Cuda
+export PATH="$HOME/.cargo/bin:/opt/cuda/bin:$PATH"
+export LD_LIBRARY_PATH=/opt/cuda/lib64:$LD_LIBRARY_PATH

@@ -31,10 +31,10 @@ return {
 
 		-- Set menu
 		dashboard.section.buttons.val = {
-			dashboard.button("f", "󰈞   Find file", ":Telescope find_files <CR>"),
-			dashboard.button("x", "   Explore", ":Oil <CR>"),
-			dashboard.button("s", "   Settings", ":edit ~/dotfiles/<CR>"),
-			dashboard.button("q", "󰩈   Quit Neovim", ":qa<CR>"),
+			dashboard.button("f", "󰈞  Find file", ":Telescope find_files <CR>"),
+			dashboard.button("x", "  Explore", ":Oil <CR>"),
+			dashboard.button("s", "  Settings", ":edit ~/dotfiles/<CR>"),
+			dashboard.button("q", "󰩈  Quit Neovim", ":qa<CR>"),
 		}
 
 		alpha.setup(dashboard.opts)
