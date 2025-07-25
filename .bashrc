@@ -63,9 +63,6 @@ pr() {
     # Create PR and get URL
     gh pr create --base dev --head "$branch" --title "$title" --body "$body"
 
-    # Merge PR
-    gh pr merge "$branch" --merge --delete-branch
-
 }
 
 # Git pull request to main
@@ -84,14 +81,11 @@ prmain() {
     # Create PR and get URL
     gh pr create --base main --head "$branch" --title "$title" --body "$body"
 
-    # Merge PR
-    gh pr merge "$branch" --merge
-
 }
 
 docker_cleanup() {
     docker stop "$(docker ps -aq)"
-    docker rm "$(docker ps -aq)"
+    docker rm --force "$(docker ps -aq)"
     docker rmi "$(docker images -aq)"
     docker volume rm "$(docker volume ls -q)"
     docker network rm "$(docker network ls -q | grep -v '^bridge$\|^host$\|^none$')"
@@ -103,6 +97,7 @@ docker_cleanup() {
 source /usr/share/git/completion/git-completion.bash
 
 alias vi="nvim"
+
 # Conda
 [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
 export CRYPTOGRAPHY_OPENSSL_NO_LEGACY=1

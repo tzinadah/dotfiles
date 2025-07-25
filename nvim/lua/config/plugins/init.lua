@@ -1,10 +1,9 @@
 return {
-	require("config.plugins.zenbones"),
+	require("config.plugins.colorscheme"),
 	require("config.plugins.lualine"),
 	require("config.plugins.treesitter"),
 	require("config.plugins.conform"),
 	require("config.plugins.telescope"),
-	require("config.plugins.nightfox"),
 	require("config.plugins.blinkcmp"),
 	require("config.plugins.oil"),
 	require("config.plugins.gitsigns"),
@@ -17,4 +16,5 @@ return {
 	require("config.plugins.blankline"),
 	require("config.plugins.comment"),
 	require("config.plugins.surround"),
+	require("config.plugins.tabline"),
 }

@@ -1,5 +1,10 @@
 -- Keybinds
-vim.keymap.set("n", "<leader>ns", ":edit ~/dotfiles/<CR>")
+vim.keymap.set("n", "<leader>ns", function()
+	vim.cmd(":edit ~/dotfiles/")
+end)
+vim.keymap.set("n", "<leader>fs", function()
+	require("telescope.builtin").find_files({ cwd = "~/dotfiles" })
+end)
 vim.keymap.set("n", "<leader>nt", function()
 	vim.cmd("tabnew")
 	require("telescope.builtin").find_files()

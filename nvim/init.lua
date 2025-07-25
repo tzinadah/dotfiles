@@ -42,8 +42,4 @@ vim.cmd("autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatopt
 
 -- Colorscheme
 vim.cmd.colorscheme("nordfox")
-
--- Highlights
-vim.api.nvim_set_hl(0, "Visual", { bg = "#94DBC5", fg = "#0F2E24", blend = 30 })
-vim.api.nvim_set_hl(0, "Search", { bg = "#94DBC5", fg = "#0F2E24", blend = 30 })
-vim.api.nvim_set_hl(0, "IncSearch", { bg = "#94DBC5", fg = "#0F2E24", blend = 30 })
+vim.cmd.colorscheme("nordfox")
