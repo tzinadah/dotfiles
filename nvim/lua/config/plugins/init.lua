@@ -17,4 +17,5 @@ return {
 	require("config.plugins.comment"),
 	require("config.plugins.surround"),
 	require("config.plugins.tabline"),
+	require("config.plugins.emoji"),
 }

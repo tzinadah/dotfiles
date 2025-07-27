@@ -15,7 +15,7 @@ parse_git_branch() {
 }
 
 # Terminal prompt
-PS1='\[\e[38;2;180;160;255m\]\w\[\e[0m\]\[\e[38;2;80;60;200m\] $(parse_git_branch)\[\e[0m\]> '
+PS1='\[\e[38;2;231;127;136m\]\w\[\e[0m\]\[\e[38;2;214;41;55m\] $(parse_git_branch)\[\e[0m\]> '
 
 # Fan profiles
 alias performance='asusctl profile -P Performance'

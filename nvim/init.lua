@@ -39,7 +39,3 @@ vim.diagnostic.config({ virtual_text = false, virtual_lines = { current_line = t
 
 -- comments on new line
 vim.cmd("autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o")
-
--- Colorscheme
-vim.cmd.colorscheme("nordfox")
-vim.cmd.colorscheme("nordfox")

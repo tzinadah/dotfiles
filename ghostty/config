@@ -1,4 +1,6 @@
-font-family = JetBrains Mono ExtraBold
+font-family = Firacode Mono
+font-style = Bold
+font-style-bold = Bold
 font-style-italic = false
 fullscreen = true
 font-size = 18
@@ -9,11 +11,16 @@ window-padding-y = 0
 window-padding-color = "extend"
 font-feature = -calt, -liga, -dlig
 adjust-cursor-thickness = 4
-cursor-color = #94DBC5
-cursor-text = #0F2E24
+cursor-color = #E77F88
+cursor-text = #6B141C
 cursor-style = block
 cursor-style-blink = false
 shell-integration-features = no-cursor
 adjust-underline-position = 5
 adjust-underline-thickness = 5
-
+font-style-italic = false
+font-style-bold-italic = false
+background = #1c1c1c
+foreground = #d4d4d4
+selection-background = #E77F88
+selection-foreground = #6B141C
