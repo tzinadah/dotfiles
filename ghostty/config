@@ -11,7 +11,7 @@ window-padding-y = 0
 window-padding-color = "extend"
 font-feature = -calt, -liga, -dlig
 adjust-cursor-thickness = 4
-cursor-text = #6B141C
+cursor-text = #0a0a0c
 cursor-style = block
 cursor-style-blink = false
 shell-integration-features = no-cursor
@@ -22,7 +22,7 @@ font-style-bold-italic = false
 
 background = 0a0a0c
 foreground = 9c9eb4
-cursor-color = 9c9eb4
+cursor-color = bf616a
 selection-background = 31323c
 selection-foreground = 9c9eb4
 

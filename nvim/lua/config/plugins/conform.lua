@@ -22,7 +22,7 @@ return {
 				yaml = { "prettier" },
 				markdown = { "prettier" },
 				-- Python
-				python = { "black" },
+				python = { "ruff", "isort", "black" },
 				-- Shell
 				sh = { "shfmt" },
 				bash = { "shfmt" },
