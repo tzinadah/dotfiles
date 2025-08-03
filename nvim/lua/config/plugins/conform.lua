@@ -28,10 +28,14 @@ return {
 				bash = { "shfmt" },
 				-- Dockerfiles
 				dockerfile = { "prettier" },
+				-- TOML
+				toml = { "taplo" },
+				-- Rust
+				rust = { "rustfmt" },
 			},
 			format_on_save = {
 				enabled = true,
-				lsp_fallback = true,
+				lsp_format = "fallback",
 			},
 			formatters = {
 				prettier = {

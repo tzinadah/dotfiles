@@ -244,6 +244,18 @@ vim.lsp.config.yamlls = {
 	},
 }
 
+vim.lsp.config.taplo = {
+	cmd = { "taplo", "lsp", "stdio" },
+	filetypes = { "toml" },
+	root_markers = { "pyproject.toml", ".taplo.toml", "taplo.toml", ".git" },
+}
+
+vim.lsp.config.rust_analyzer = {
+	cmd = { "rust-analyzer" },
+	filetypes = { "rust" },
+	root_markers = { "Cargo.toml", ".git" },
+}
+
 vim.lsp.enable({
 	"luals",
 	"gopls",
@@ -256,4 +268,6 @@ vim.lsp.enable({
 	"bashls",
 	"jsonls",
 	"yamlls",
+	"taplo",
+	"rust_analyzer",
 })

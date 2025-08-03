@@ -1,4 +1,4 @@
-font-family = Firacode Mono
+font-family = AnonymicePro Nerd Font Bold
 font-style = Bold
 font-style-bold = Bold
 font-style-italic = false
@@ -15,8 +15,8 @@ cursor-text = #0a0a0c
 cursor-style = block
 cursor-style-blink = false
 shell-integration-features = no-cursor
-adjust-underline-position = 5
-adjust-underline-thickness = 5
+adjust-underline-position = 3
+adjust-underline-thickness = 3
 font-style-italic = false
 font-style-bold-italic = false
 
