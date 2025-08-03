@@ -49,7 +49,9 @@ alias tmux="tmux -f ~/.config/tmux/tmux.conf"
 
 # SSH Credentials
 eval "$(ssh-agent -s)" >/dev/null 2>&1
-ssh-add -l 2>/dev/null | grep -q "id_uni" || ssh-add ~/.ssh/id_uni >/dev/null 2>&1
+ssh-add -l 2>/dev/null | grep -q "id_uni" || ssh-add ~/.ssh/id_uni >/dev/null 2>&1 
+ssh-add -l 2>/dev/null | grep -q "id_personal" || ssh-add ~/.ssh/id_personal >/dev/null 2>&1
+
 
 # Conda
 [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
