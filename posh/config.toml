@@ -1,0 +1,90 @@
+"$schema" = "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json"
+final_space = true
+version = 3
+
+[[blocks]]
+type = "prompt"
+alignment = "left"
+newline = true
+
+[[blocks.segments]]
+type = "path"
+style = "diamond"
+leading_diamond = ""
+trailing_diamond = ""
+foreground = "p:rose"
+background = "p:surface1"
+template = "{{ .Path }}"
+
+[blocks.segments.properties]
+style = "full"
+
+
+[[blocks.segments]]
+type = "executiontime"
+style = "plain"
+foreground = "p:ember"
+background = "transparent"
+template = " {{ .FormattedMs }}"
+
+[[blocks]]
+type = "rprompt"
+alignment = "right"
+
+[[blocks.segments]]
+type = "git"
+style = "diamond"
+leading_diamond = ""
+trailing_diamond = ""
+foreground = "p:storm"
+background = "p:surface1"
+template = " {{ .HEAD }}{{if or (.Working.Changed) (.Staging.Changed)}}  {{ end }}{{if gt .Behind 0}}{{ end }}{{if gt .Ahead 0}} {{ end }}"
+
+[blocks.segments.properties]
+fetch_status = true
+fetch_upstream_icon = true
+source = "cli"
+
+[[blocks]]
+type = "prompt"
+alignment = "left"
+newline = true
+
+[[blocks.segments]]
+type = "text"
+style = "plain"
+foreground = "p:tide"
+background = "transparent"
+template = " "
+
+[transient_prompt]
+foreground = "p:tide"
+background = "transparent"
+template = " "
+
+[palette]
+text = "#9c9eb4"
+subtext1 = "#a6adc3"
+subtext0 = "#9399ad"
+overlay2 = "#7f8497"
+overlay1 = "#686c7d"
+overlay0 = "#646782"
+surface2 = "#555873"
+surface1 = "#31323c"
+surface0 = "#1e2122"
+base = "#0a0a0c"
+mantle = "#020203"
+crust = "#000000"
+seafoam = "#8dd3c3"
+rose = "#e77f88"
+ember = "#d08770"
+storm = "#8796aa"
+crimson = "#bf616a"
+rust = "#bc735c"
+frost = "#96a8ad"
+sage = "#9db89c"
+tide = "#79a0aa"
+slate = "#7c7d8c"
+drift = "#8d9da1"
+charcoal = "#636778"
+fog = "#a0a0af"
